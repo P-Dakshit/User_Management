@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Home Page</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+  <div class="container mt-5">
+    <div class="card shadow-sm">
+      <div class="card-header bg-primary text-white">
+        <h2 class="mb-0">Welcome to the User Management System</h2>
+      </div>
+      <div class="card-body">
+        <h5>Available Routes</h5>
+        <ul class="list-group list-group-flush mb-3">
+          <li class="list-group-item">
+            <strong>Admin/User:</strong> <code>/usercreate</code> - Create a new user
+          </li>
+          <li class="list-group-item">
+            <strong>All Users:</strong> <code>/login</code> - Login to access routes
+          </li>
+        </ul>
+
+        <h5 class="mt-4">Protected Routes (Require Login)</h5>
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item">
+            <strong>Admin:</strong> <code>/admin/userlist</code> - View all users
+          </li>
+          <li class="list-group-item">
+            <strong>Admin/User:</strong> <code>/dashboard/user/:email</code> - View individual user profile
+          </li>
+          <li class="list-group-item">
+            <strong>Admin:</strong> <code>/admin/user/:email</code> - Update user by email
+          </li>
+          <li class="list-group-item">
+            <strong>Admin:</strong> <code>/admin/user/:email</code> - Delete user by email
+          </li>
+        </ul>
+
+        <div class="alert alert-warning mt-4">
+          <strong>Note:</strong> You must be logged in to access any of the protected routes.
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
