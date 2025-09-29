@@ -60,7 +60,4 @@ User_Management/
 │ ├── single_user.ejs  
 │ ├── forget_password.ejs  
 │ └── reset_password.ejs  
-├── Upload/ # Uploaded profile images  
-├── Logs/ # Winston logs  
-├── app.log  
-└── error.log
+└── Upload/ # Uploaded profile images  
